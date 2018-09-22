@@ -3,5 +3,3 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 console.log("pages.coffee is running");
-header = document.getElementById("wallet");
-header.innerHTML = "Welcome to you savings";

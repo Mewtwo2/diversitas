@@ -1,3 +1,27 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html{
+  font-family: sans-serif;
+}
+
+body{
+  margin:0;
+}
+
+.toplevel-container{
+  background-color: #040303;
+  padding: 1%;
+  text-align: center;
+}
+
+.toplevel-container a{
+  text-decoration: none;
+  color:#f3e8ee;
+}
+
+#choose-category{
+  background-color: #f3e8ee;
+  height: 100vh;
+}
