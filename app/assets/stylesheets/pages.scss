@@ -8,6 +8,7 @@ html{
 
 body{
   margin:0;
+  background-color: #f3e8ee;
 }
 
 .toplevel-container{
@@ -21,7 +22,28 @@ body{
   color:#f3e8ee;
 }
 
+#greeting{
+  padding: 3%;
+  text-align: center;
+  background-color: #1b2a41;
+}
+
+#greeting h1{
+  margin:0;
+  color: #f3e8ee;
+}
+
 #choose-category{
-  background-color: #f3e8ee;
-  height: 100vh;
+  margin-top: 13%;
+  margin-left: 1%;
+}
+
+#choose-category a{
+  text-decoration: none;
+  color: #f3e8ee;
+  font-size: 250%;
+  background-color: #1b2a41;
+  padding: 5%;
+  border-radius: 300px;
+  margin-left: 2%;
 }
