@@ -1,55 +1,102 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: pricedown;
+  // src: url("pricedown bl.ttf");
+  src: url("Adler.ttf");
+}
 
-html{
+html {
   font-family: sans-serif;
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   background-color: #f3e8ee;
 }
 
-.toplevel-container{
+.toplevel-container {
   background-color: #040303;
   padding: 1%;
   text-align: center;
   box-shadow: 10px 5px 5px gray;
 }
 
-#greeting{
+#choose-category {
+  text-align: center;
+  margin-top: 13%;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 350%;
+    background-color: #F9E103;
+    border: 4px solid black;
+    padding: 5%;
+    border-radius: 90px;
+    margin-left: 2%;
+    transition: font-size background-color;
+    transition-duration: 0.5s;
+  }
+
+  a:hover {
+    font-size: 370%;
+    background-color: #F7C202;
+    transition: font-size background-color;
+    transition-duration: 0.5s;
+  }
+}
+
+#greeting {
   margin-top: 12%;
   padding: 1%;
   text-align: center;
   background-color: #F9E103;
+  border-top: 3px solid black;
+
+  h1 {
+    color: black;
+    font-size: 250%;
+  }
 }
 
-#greeting h1{
-  color: black;
-}
-
-#choose-category{
-  margin-top: 13%;
-  margin-left: 1%;
-}
-
-#choose-category a{
-  text-decoration: none;
-  color:black;
-  font-size: 230%;
-  background-color: #F9E103;
-  border: 4px solid black;
+#about-section p {
+  text-align: center;
+  color: white;
+  font-family: pricedown;
+  font-size: 200%;
   padding: 5%;
-  border-radius: 90px;
-  margin-left: 2%;
-  transition:font-size background-color;
-  transition-duration: .5s;
+  background-color: black;
+  margin: 0;
 }
 
-#choose-category a:hover{
-  font-size: 290%;
+.accordion {
+  text-align: center;
+  height: 29.8vh;
+  background-color: #F9E103;
+  padding: 3%;
+  border-bottom: 2px solid black;
+
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.accordion:hover,
+.active {
   background-color: #F7C202;
-  transition:font-size background-color;
-  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.list-div{
+  // text-align: center;
+  display: none;
+  overflow: hidden;
+}
+
+.pcpp-part-list {
+  margin: 0 !important;
+  // display: none;
+  overflow: hidden;
 }
