@@ -28,3 +28,6 @@
 
 # Ignore environment variable file
 environmentvars.md
+
+# Ignore Builds config
+builds
