@@ -1,0 +1,7 @@
+<%= form_for(@user) do |f| %>
+  <label>Email:</label>
+  <%= f.email_field :email, placeholder: 'Email' %><br><br>
+  <label>Password:</label>
+  <%= f.password_field :password, placeholder: 'Password' %><br><br>
+  <%= f.submit %>
+<% end %>
