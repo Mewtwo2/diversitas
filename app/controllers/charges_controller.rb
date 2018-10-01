@@ -1,4 +1,7 @@
 class ChargesController < ApplicationController
+
+  before_action :is_logged
+
   def new
   end
 
@@ -12,8 +15,18 @@ class ChargesController < ApplicationController
       :currency => 'usd'
     )
 
+    @user = current_user
+    @user.is_donor = true
+    @user.save
+    
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
+  end
+
+  private
+
+  def is_logged
+    redirect_to root_path unless logged_in?
   end
 end

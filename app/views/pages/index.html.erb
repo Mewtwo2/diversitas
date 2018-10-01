@@ -12,6 +12,9 @@
       <a href="">General</a>
       <a href="">Workstation</a>
       <a href="/gaming">Gaming</a>
+      <% if logged_in? && @user.is_donor == true %>
+        <a href="">PH</a>
+      <% end %>
     </div>
 
     <div id="greeting">
