@@ -8,22 +8,43 @@
       <a href="#"><img src="desktop-pc.png" id="home-logo" style="height:6vh;"/></a>
     </div>
 
-    <div id="choose-category">
-      <a href="">General</a>
-      <a href="">Workstation</a>
-      <a href="/gaming">Gaming</a>
-      <% if logged_in? && @user.is_donor == true %>
-        <a href="">PH</a>
-      <% end %>
-    </div>
-
     <div id="greeting">
       <h1 id="landingpage-header">WELCOME TO DIVERSITAS</h1>
     </div>
 
     <div id="about-section">
       <p>Diversitas is a platform that lets you choose PC builds from a choice of categories. The categorized builds are sorted by price so you are able to choose based on your needs and budget.</p>
-    </div>
+    </div><br>
+
+    <a class="category-links" href="/gaming">
+      <div class="category">
+        <img src="game-controller.png" style="height:6vh;"/><br><br>
+        <h2>Gaming</h2>
+      </div>
+    </a>
+
+    <a class="category-links" href="">
+      <div class="category">
+        <img src="work-pen.png" style="height:6vh;"/>
+        <h2>Workstation</h2>
+      </div>
+    </a>
+
+    <a class="category-links" href="">
+      <div class="category">
+        <img src="juggler.png" style="height:6vh;"/>
+        <h2>General</h2>
+      </div>
+    </a>
+
+    <% if logged_in? && @user.is_donor == true %>
+      <a class="category-links" href="">
+        <div class="category">
+          <img src="juggler.png" style="height:6vh;"/>
+          <h2>General</h2>
+        </div>
+      </a>
+    <% end %>
 
   </body>
 
