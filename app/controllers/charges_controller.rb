@@ -18,7 +18,7 @@ class ChargesController < ApplicationController
     @user = current_user
     @user.is_donor = true
     @user.save
-    
+
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
