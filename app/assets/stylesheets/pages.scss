@@ -42,6 +42,13 @@ body {
   color: white;
   background-color: #040303;
   border-radius: 6px;
+  transition-timing-function: ease-in;
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+.index-session-button:hover{
+  color: #F9E103;
 }
 
 #about-section p {
@@ -62,6 +69,9 @@ body {
   padding: 3%;
   border-top: 2px solid #040303;
   border-bottom: 2px solid #040303;
+  transition-timing-function: ease-in;
+  transition-property: background-color;
+  transition-duration: .5s;
 }
 
 .category:hover {
@@ -79,6 +89,9 @@ body {
   background-color: #F9E103;
   padding: 3%;
   border-bottom: 2px solid #040303;
+  transition-timing-function: ease-in;
+  transition-property: background-color;
+  transition-duration: .5s;
 
   h2 {
     font-weight: bold;

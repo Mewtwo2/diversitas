@@ -1,17 +1,28 @@
+<body style="text-align:center;padding:1%;"> <!-- temporary styling for readability -->
 <%= form_tag charges_path do %>
-  <article>
-    <% if flash[:error].present? %>
-        <p><%= flash[:error] %></p>
-    <% end %>
-    <label class="amount">
-      <span>Amount:$</span>
-    </label>
-    <%= number_field_tag :number%>
-  </article>
+<article>
+  <% if flash[:error].present? %>
+    <p><%= flash[:error] %></p>
+  <% end %>
+  <label class="amount">
+    <span>How much would you like to donate? $</span>
+  </label>
+  <%= number_field_tag :number%>
+</article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Donation"
-          data-locale="auto"
-          data-zip-code="true"></script>
+<script
+  src="https://checkout.stripe.com/checkout.js"
+  class="stripe-button"
+  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+  data-name="diversitas.herokuapp"
+  data-description="Donation"
+  data-locale="auto"
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-zip-code="true"></script>
+
+<script>
+  document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+</script><br>
+<%= button_tag "Pay with Card", class: 'stripe-submit' %>
 <% end %>
+</body>
