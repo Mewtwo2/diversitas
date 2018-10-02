@@ -5,22 +5,53 @@
   <head></head>
   <body>
     <div class="toplevel-container">
-      <a href="#"><img src="desktop-pc.png" id="home-logo" style="height:6vh;"/></a>
-    </div>
-
-    <div id="choose-category">
-      <a href="">General</a>
-      <a href="">Workstation</a>
-      <a href="/gaming">Gaming</a>
+      <a href="#"><img src="desktop-pc.png" id="home-logo" style="height:8vh;"/></a>
     </div>
 
     <div id="greeting">
-      <h1 id="landingpage-header">WELCOME TO DIVERSITAS</h1>
+      <h1 id="landingpage-header">WELCOME TO DIVERSITAS</h1><br>
+      <% if logged_in? %>
+      <%= link_to "Donate", '/charges/new', class: 'index-session-button' %>
+        <%= link_to "Log Out", '/logout', method: :delete, class: 'index-session-button' %><br><br>
+      <% else %>
+        <%= link_to "Log In", '/login', class: 'index-session-button' %>
+        <%= link_to "Sign Up", '/users/new', class: 'index-session-button' %><br><br>
+      <% end %>
     </div>
 
     <div id="about-section">
       <p>Diversitas is a platform that lets you choose PC builds from a choice of categories. The categorized builds are sorted by price so you are able to choose based on your needs and budget.</p>
-    </div>
+    </div><br>
+
+    <a class="category-links" href="/gaming">
+      <div class="category">
+        <img src="game-controller.png" style="height:8vh;"/>
+        <h2>Gaming</h2>
+      </div>
+    </a>
+
+    <a class="category-links" href="">
+      <div class="category">
+        <img src="work-pen.png" style="height:8vh;"/>
+        <h2>Workstation</h2>
+      </div>
+    </a>
+
+    <a class="category-links" href="">
+      <div class="category">
+        <img src="juggler.png" style="height:8vh;"/>
+        <h2>General</h2>
+      </div>
+    </a>
+
+    <% if logged_in? && @user.is_donor == true %>
+      <a class="category-links" href="">
+        <div class="category">
+          <img src="juggler.png" style="height:6vh;"/>
+          <h2>General</h2>
+        </div>
+      </a>
+    <% end %>
 
   </body>
 

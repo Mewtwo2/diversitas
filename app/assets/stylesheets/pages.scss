@@ -1,12 +1,6 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@font-face {
-  font-family: pricedown;
-  // src: url("pricedown bl.ttf");
-  src: url("Adler.ttf");
-}
-
 html {
   font-family: sans-serif;
 }
@@ -23,52 +17,64 @@ body {
   box-shadow: 10px 5px 5px gray;
 }
 
-#choose-category {
-  text-align: center;
-  margin-top: 13%;
-
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 350%;
-    background-color: #F9E103;
-    border: 4px solid black;
-    padding: 5%;
-    border-radius: 90px;
-    margin-left: 2%;
-    transition: font-size background-color;
-    transition-duration: 0.5s;
-  }
-
-  a:hover {
-    font-size: 370%;
-    background-color: #F7C202;
-    transition: font-size background-color;
-    transition-duration: 0.5s;
-  }
-}
-
 #greeting {
-  margin-top: 12%;
+  margin-top: 3%;
   padding: 1%;
   text-align: center;
   background-color: #F9E103;
-  border-top: 3px solid black;
+  border-top: 3px solid #040303;
 
   h1 {
-    color: black;
+    color: #040303;
     font-size: 250%;
   }
+}
+
+.index-session-button{
+  padding: .7%;
+  text-decoration: none;
+  color: white;
+  background-color: #040303;
+  border-radius: 6px;
+  transition-timing-function: ease-in;
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+.index-session-button:hover{
+  color: #F9E103;
 }
 
 #about-section p {
   text-align: center;
   color: white;
-  font-family: pricedown;
-  font-size: 200%;
+  font-family: sans-serif;
+  font-size: 170%;
   padding: 5%;
-  background-color: black;
+  background-color: #040303;
   margin: 0;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.category {
+  text-align: center;
+  height: 15vh;
+  background-color: #F9E103;
+  padding: 3%;
+  border-top: 2px solid #040303;
+  border-bottom: 2px solid #040303;
+  transition-timing-function: ease-in;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+.category:hover {
+  background-color: #F7C202;
+}
+
+.category-links {
+  text-decoration: none;
+  color: #040303;
 }
 
 .accordion {
@@ -76,7 +82,10 @@ body {
   height: 29.8vh;
   background-color: #F9E103;
   padding: 3%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #040303;
+  transition-timing-function: ease-in;
+  transition-property: background-color;
+  transition-duration: .5s;
 
   h2 {
     font-weight: bold;
@@ -89,14 +98,12 @@ body {
   cursor: pointer;
 }
 
-.list-div{
-  // text-align: center;
+.list-div {
   display: none;
   overflow: hidden;
 }
 
 .pcpp-part-list {
   margin: 0 !important;
-  // display: none;
   overflow: hidden;
 }

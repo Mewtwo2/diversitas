@@ -1,3 +1,29 @@
 // Place all the styles related to the charges controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#charges-new-body{
+  background-color:#F9E103;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: .4%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.stripe-submit{
+  background-color:#040303;
+  padding: .6%;
+  border-radius: 6px;
+  font-size: 150%;
+  border:none;
+  color:white;
+  cursor: pointer;
+}

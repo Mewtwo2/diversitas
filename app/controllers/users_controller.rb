@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in(@user)
+      UserMailer.sign_up(@user).deliver_now
       redirect_to @user
     else
       render 'new'
