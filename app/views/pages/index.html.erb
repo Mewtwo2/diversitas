@@ -9,7 +9,13 @@
     </div>
 
     <div id="greeting">
-      <h1 id="landingpage-header">WELCOME TO DIVERSITAS</h1>
+      <h1 id="landingpage-header">WELCOME TO DIVERSITAS</h1><br>
+      <% if logged_in? %>
+        <%= link_to "Log Out", '/logout', method: :delete, class: 'index-session-button' %>
+      <% else %>
+        <%= link_to "Log In", '/login', class: 'index-session-button' %><br><br><br>
+        <%= link_to "Sign Up", '/users/new', class: 'index-session-button' %>
+      <% end %>
     </div>
 
     <div id="about-section">

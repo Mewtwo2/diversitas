@@ -23,6 +23,38 @@ body {
   box-shadow: 10px 5px 5px gray;
 }
 
+#greeting {
+  margin-top: 3%;
+  padding: 1%;
+  text-align: center;
+  background-color: #F9E103;
+  border-top: 3px solid #040303;
+
+  h1 {
+    color: #040303;
+    font-size: 250%;
+  }
+}
+
+.index-session-button{
+  padding: .7%;
+  text-decoration: none;
+  color: white;
+  background-color: #040303;
+  border-radius: 6px;
+}
+
+#about-section p {
+  text-align: center;
+  color: white;
+  font-family: pricedown;
+  font-size: 200%;
+  padding: 5%;
+  background-color: #040303;
+  margin: 0;
+  box-shadow: 10px 10px 10px gray;
+}
+
 .category {
   text-align: center;
   height: 15vh;
@@ -39,30 +71,6 @@ body {
 .category-links {
   text-decoration: none;
   color: #040303;
-}
-
-#greeting {
-  margin-top: 3%;
-  padding: 1%;
-  text-align: center;
-  background-color: #F9E103;
-  border-top: 3px solid #040303;
-
-  h1 {
-    color: #040303;
-    font-size: 250%;
-  }
-}
-
-#about-section p {
-  text-align: center;
-  color: white;
-  font-family: pricedown;
-  font-size: 200%;
-  padding: 5%;
-  background-color: #040303;
-  margin: 0;
-  box-shadow: 10px 10px 10px gray;
 }
 
 .accordion {
