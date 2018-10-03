@@ -67,3 +67,6 @@ gem 'stripe'
 # include JSON and Nokogiri
 gem 'nokogiri'
 gem 'json'
+
+# include whenever for utilizing cron jobs
+gem 'whenever'
