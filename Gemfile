@@ -63,3 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Include Stripe Payments
 gem 'stripe'
+
+# include JSON and Nokogiri
+gem 'nokogiri'
+gem 'json'
