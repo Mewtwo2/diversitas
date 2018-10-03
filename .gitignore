@@ -94,3 +94,6 @@ environmentvars.md
 
 # Ignore Builds config
 builds
+
+# Ignore Cron job
+/config/schedule.rb
