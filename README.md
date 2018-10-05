@@ -5,7 +5,9 @@ A site that lists out different pc builds in different categories for different 
 
 All the site functionality currently works however the content of the lists themselves are still being refined so I encourage anyone visiting the site to take everything besides the gaming list with a grain of salt.
 
-The donation system is in test mode so feel free to test it out without charging your own card.
+The donation system is in test mode so feel free to test it out without charging your own card. I don't recommend using your own card anyway. Anything that happens if you use your own card is out of my control.
+
+The donation system requires a minimum of $1 to work. If you donate, you gain access to a 'media center' category for builds.
 
 ### How to test Donation
 
