@@ -30,14 +30,14 @@
       </div>
     </a>
 
-    <a class="category-links" href="">
+    <a class="category-links" href="/workstation">
       <div class="category">
         <img src="work-pen.png" style="height:8vh;"/>
         <h2>Workstation</h2>
       </div>
     </a>
 
-    <a class="category-links" href="">
+    <a class="category-links" href="/general">
       <div class="category">
         <img src="juggler.png" style="height:8vh;"/>
         <h2>General</h2>
@@ -45,10 +45,10 @@
     </a>
 
     <% if logged_in? && @user.is_donor == true %>
-      <a class="category-links" href="">
+      <a class="category-links" href="/mediacenter">
         <div class="category">
-          <img src="juggler.png" style="height:6vh;"/>
-          <h2>General</h2>
+          <img src="play-button.png" style="height:8vh;"/>
+          <h2>Media Center</h2>
         </div>
       </a>
     <% end %>

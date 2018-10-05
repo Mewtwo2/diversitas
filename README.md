@@ -1,24 +1,20 @@
-# README
+# Diversitas
+## https://diversitas.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A site that lists out different pc builds in different categories for different price ranges.
 
-Things you may want to cover:
+All the site functionality currently works however the content of the lists themselves are still being refined so I encourage anyone visiting the site to take everything besides the gaming list with a grain of salt.
 
-* Ruby version
+The donation system is in test mode so feel free to test it out without charging your own card.
 
-* System dependencies
+### How to test Donation
 
-* Configuration
+__Email:__ Can be anything as long as it is in email format
 
-* Database creation
+__Credit card number:__ 4242 4242 4242 4242
 
-* Database initialization
+__MM/YY:__ Can be any date in the future
 
-* How to run the test suite
+__CVC:__ Any 3 digit number
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+__Zip Code:__ Any 5 digit number
