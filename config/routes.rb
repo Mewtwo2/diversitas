@@ -14,5 +14,8 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
 
   get '/gaming' => 'pages#gaming'
+  get '/mediacenter' => 'pages#media'
+  get '/workstation' => 'pages#workstation'
+  get '/general' => 'pages#general'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

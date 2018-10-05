@@ -13,4 +13,13 @@ class PagesController < ApplicationController
     @budget_gaming_build = GamingBuild.find_by(price_category: 'budget')
   end
 
+  def media
+  end
+
+  def workstation
+  end
+
+  def general
+  end
+
 end
