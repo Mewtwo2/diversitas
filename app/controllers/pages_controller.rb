@@ -13,6 +13,9 @@ class PagesController < ApplicationController
   end
 
   def media
+    if !logged_in?
+      redirect_to root_path
+    end
   end
 
   def workstation
