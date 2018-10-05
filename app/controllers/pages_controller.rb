@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def media
-    if !logged_in?
+    if !logged_in? || current_user.is_donor != true
       redirect_to root_path
     end
   end
