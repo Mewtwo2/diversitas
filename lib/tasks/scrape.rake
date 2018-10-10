@@ -37,3 +37,10 @@ namespace :gaming do
   end
 
 end
+
+namespace :workstation do
+  desc "Scrape Workstation Budget Build"
+  task :scrape_budget_prices => :environment do
+    
+  end
+end
