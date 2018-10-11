@@ -20,20 +20,25 @@ namespace :gaming do
 
   desc 'Run Mid-Range Gaming Scrape'
   task :scrape_midrange_prices => :environment do
-    parts = ['https://www.amazon.com/dp/B0759FTRZL','https://www.amazon.com/dp/B07CHN51SS','https://www.amazon.com/dp/B01F9G43WU','https://www.amazon.com/dp/B01MEFABEL','https://www.amazon.com/dp/B009GXZ8MM','https://www.amazon.com/dp/B07DTMXD83']
+    parts = [['cpu','https://www.amazon.com/dp/B0759FGJ3Q'],['motherboard','https://www.amazon.com/dp/B07BQBWWY5'],['ram','https://www.amazon.com/dp/B00SV7IILC'],['hdd','https://www.amazon.com/dp/B0781Z7Y3S'],['gpu','https://www.amazon.com/dp/B01GX5YWAO'],['case','https://www.amazon.com/dp/B009GXZ8MM'],['psu','https://www.amazon.com/dp/B07DTMXD83']]
+
+    midrange_gaming_build = GamingBuild.find_by(price_category: 'midrange')
+    if !midrange_gaming_build
+      midrange_gaming_build = GamingBuild.new
+      midrange_gaming_build['price_category'] = 'midrange'
+      midrange_gaming_build.save
+    end
+
     parts.each do |part|
-      rtx = Nokogiri::HTML(open(part)).css('span#priceblock_ourprice').text.gsub!(/[$.]/,"")[0..-3].to_i
-      p rtx
+      price = Nokogiri::HTML(open(part[1])).css('span#priceblock_ourprice').text.gsub!(/[$.]/,"")[0..-3].to_i
+      midrange_gaming_build[part[0]] = price
+      midrange_gaming_build.save
     end
   end
 
   desc 'Run High-End Gaming Scrape'
   task :scrape_highend_prices => :environment do
-    parts = ['https://www.amazon.com/dp/B0759FTRZL','https://www.amazon.com/dp/B07CHN51SS','https://www.amazon.com/dp/B01F9G43WU','https://www.amazon.com/dp/B01MEFABEL','https://www.amazon.com/dp/B009GXZ8MM','https://www.amazon.com/dp/B07DTMXD83']
-    parts.each do |part|
-      rtx = Nokogiri::HTML(open(part)).css('span#priceblock_ourprice').text.gsub!(/[$.]/,"")[0..-3].to_i
-      p rtx
-    end
+
   end
 
 end
@@ -41,6 +46,15 @@ end
 namespace :workstation do
   desc "Scrape Workstation Budget Build"
   task :scrape_budget_prices => :environment do
-    
+
   end
+
+end
+
+namespace :general do
+  desc 'Scrape Budget General Build'
+  task :scrape_budget_prices => :environment do
+
+  end
+
 end
