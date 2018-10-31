@@ -8,14 +8,14 @@ All the site functionality does work however the content of the lists themselves
 
 <a href="https://diversitas.herokuapp.com" target="_blank">Live Website</a>
 
-&#9673;&emsp;Technologies: Ruby on Rails, Postgresql, BCrypt, Bootstrap, Stripe
+&#9673;&emsp;Technologies: Ruby on Rails, Postgresql, BCrypt, Bootstrap, Stripe<br>
 &#9673;&emsp;Rails version: 5.2.1<br>
 
 <h2>How to test donation</h2>
 <p>The donation system is in test mode so you can only use it with the specified credentials below. Do not use real credit card info. The donation system requires a minimum of $1 to work. If you donate, you unlock access to a 'media center' category.</p>
 
-&#9673;&emsp;Email: Can be anything as long as it is in email format
-&#9673;&emsp;Credit card number: 4242 4242 4242 4242
-&#9673;&emsp;MM/YY: Can be any date in the future
-&#9673;&emsp;CVC: Any 3 digit number
+&#9673;&emsp;Email: Can be anything as long as it is in email format<br>
+&#9673;&emsp;Credit card number: 4242 4242 4242 4242<br>
+&#9673;&emsp;MM/YY: Can be any date in the future<br>
+&#9673;&emsp;CVC: Any 3 digit number<br>
 &#9673;&emsp;Zip Code: Any 5 digit number<br>
